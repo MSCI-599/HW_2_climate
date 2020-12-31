@@ -1,0 +1,49 @@
+---
+title: "Ice Core CO2"
+author: "MSCI 599"
+date: "11/6/2020"
+output: html_document
+---
+
+***
+
+```{r setup, include=FALSE}
+# Put any RMarkdown options you'd like to have throughout the document here
+# These are the options I like to use to make figures smaller and print code output right below the command:
+knitr::opts_chunk$set(fig.width=6, fig.asp = 0.618, collapse=TRUE) 
+```
+
+### Homework # 2b Ice core CO2
+
+***
+
+#### Longer term trends in CO2 Records with ice cores
+
+The data we analyzed in unit 2 included CO2 records dating back only as far as the measurements at the Mauna Loa observatory.  To put these values into geological perspective, we must look back much farther than humans have been monitoring atmosopheric CO2 levels.  To do this, we can use the tiny pockets of ice locked away in ice cores.
+
+Vostok Core, back to 400,000 yrs before present day 
+
+- Description of data set: <https://cdiac.ess-dive.lbl.gov/trends/co2/vostok.html>
+- Raw data: <https://cdiac.ess-dive.lbl.gov/ftp/trends/co2/vostok.icecore.co2>
+
+The Vostok ice core was drilled from the ice in East Antarctica to a depth of > 3000 m. The age of the ice core samples are provided as the age of the ice, and the mean age of the air pocket within the ice. Ages are provided in years BP, which means years prior to 1950. We can transform the age variable to reverse the order and create a chronological record:
+
+### Tasks:
+
+- Describe the ice core data set: what are the columns and units? Where do the numbers come from? 
+- Reverse the ordering of the ice core data to create a chronological record.  
+- Plot data ice core data
+- Try out various smoothing windowed averages of the data. 
+- Join this series to Mauna Loa data (see `4_co2_mauna_loa.Rmd` in unit 2)
+- Plot joined data
+- Describe your conclusions
+
+#### Question 1:
+
+What did the ice core CO2 cycle look like before the industrial revolution? Use figures, calculations and prose to describe these trends. 
+
+#### Question 2:
+
+How has the modern Mauna Loa direct-CO2 measurements compared with the ice core CO2 estimates? Use figures, calculations and prose to describe the differences. 
+
+***

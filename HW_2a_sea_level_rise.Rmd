@@ -1,0 +1,51 @@
+---
+title: "HW_2a_sea_level_rise"
+author: "MSCI 599"
+date: "12/30/2020"
+output: html_document
+---
+
+***
+
+```{r setup, include=FALSE}
+# Put any RMarkdown options you'd like to have throughout the document here
+# These are the options I like to use to make figures smaller and print code output right below the command:
+knitr::opts_chunk$set(fig.width=6, fig.asp = 0.618, collapse=TRUE) 
+```
+
+### Homework # 2a Sea Level Rise
+
+#### Skill practice: line plots, confidence interval plots, bar plots, subsetting, conditional statements
+
+***
+
+#### Download the NASA Global Mean Sea Level rise data 
+
+- Data description: <http://climate.nasa.gov/vital-signs/sea-level/>
+- Raw data file: <http://climate.nasa.gov/system/internal_resources/details/original/121_Global_Sea_Level_Data_File.txt>
+
+#### Download the longer global mean sea level rise data set from CSIRO using tide guage data 
+
+- Data description: <https://research.csiro.au/slrwavescoast/sea-level/measurements-and-data/sea-level-data/>
+- Raw data file: <ftp://ftp.csiro.au/legresy/gmsl_files/CSIRO_Recons.csv>
+
+
+### Tasks:
+
+- Describe the data set: what are the columns and units? 
+- Where do these data come from? 
+- What is the uncertainty in measurment? Resolution of the data? Interpretation of missing values?
+- Construct the necessary R code to import this data set as a `data.frame` object.
+- Plot the data and describe the trends you observe.
+- Embed any figures you make into the `.Rmd` file and also save them as PDFs in the `figures/` directory
+
+Download both data sets and store them in your Rproj folder in the directory called `data/`. I chose to read the NASA .txt file in directly and I manually counted the number of header rows that I needed to skip. You could also remove the header (of course saving the information in a new .txt file in the directory called `metadata.txt`) and save the data as a new .txt file or as a .csv file. Your choice! Use the information in the header to figure out what the column names should be. (Note that I have downloaded and included the data in your `data/` directory "just in case" but I want you to go through the steps of doing this yourself.)
+
+### Question 1:
+Why do you think the uncertainty is higher in the early portion of the time series than in the later portion of the time series?
+
+### Question 2:
+What is the rate of sea level rise in the first 20 years of the tide guage data set? What is the rate of sea level rise for the last (most recent) 20 years of the satellite altimetry data set? Use a bar plot to visualize the total global sea level rise in 20 year increments. Hint: 1880-2000 data should be drawn from tide guage measurements; 2000-2020 data will need to rely on satellite altimetry measurements 
+
+
+***

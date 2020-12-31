@@ -1,3 +1,9 @@
+# HW answer files
+HW*_ANSWERS*
+
+# .html files (knit from .Rmd) for now
+.html
+
 # History files
 .Rhistory
 .Rapp.history
@@ -37,3 +43,15 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# Prevent mac users to commit .DS_Store files
+*.DS_Store
+
+# Temporary files
+*~
+~$*.doc*
+~$*.xls*
+*.xlk
+~$*.ppt*
+
+
